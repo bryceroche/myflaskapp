@@ -1,0 +1,24 @@
+ssh -i "ec2_expressv1.pem" ubuntu@ec2-54-244-71-87.us-west-2.compute.amazonaws.com
+
+ssh -i "ec2_expressv1.pem" ubuntu@ec2-34-217-101-58.us-west-2.compute.amazonaws.com
+
+<ul class="nav navbar-nav">
+  <li><a href="/">Home 2</a></li>
+  <li><a href="/about">About 2</a></li>
+  <li><a href="/templates">Templates 2</a></li>
+  <li><a href="/upload_candidates">Upload Candidates 2</a></li>
+  <li><a href="/all_uploads">All Uploads 2</a></li>
+  <li><a href="/unscheduled_prospects">Unscheduled Prospects 2</a></li>
+
+</ul>
+
+pip install wtforms_components -t /Users/bryceroche/desktop/myflaskapp
+pip install flask.ext.wtf -t /Users/bryceroche/desktop/myflaskapp
+pip install flask.ext -t /Users/bryceroche/desktop/myflaskapp
+
+
+from flask.ext.wtf import Form
+from wtforms.fields import RadioField
+from wtforms.validators import Required
+
+choices=[('value','description'),('value_two','whatever')]

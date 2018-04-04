@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Available Times</h1>
+  <a class="btn btn-success" href="/all_uploads"> Show all batches of uploads</a>
+  <hr>
+  <table class="table table-striped">
+    <tr>
+      <th>ID</th>
+      <th>Personid</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+      <th>Week Day</th>
+      <th>Edit</th>
+      <th>Delete</th>
+
+      <th></th>
+    </tr>
+    {% for time in times %}
+      <tr>
+        <td>{{time.availableid}}</td>
+        <td>{{time.personid}}</td>
+        <td>{{time.starttime}}</td>
+        <td>{{time.endtime}}</td>
+        <td>{{time.weekday}}</td>
+
+        <td><a href="edit_time/{{time.availableid}}" class="btn btn-default ">Edit</a></td>
+        <td>
+          <form action="{{url_for('delete_time', id=time.availableid)}}" method="post">
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="submit" value="Delete" class="btn btn-danger">
+          </form>
+        </td>
+        <td>
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+{% endblock %}

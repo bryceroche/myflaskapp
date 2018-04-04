@@ -2,23 +2,23 @@ def Articles():
     articles = [
         {
             'id': 1,
-            'title':'Article One',
-            'body':'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            'author':'Brad Traversy',
+            'title':'Why I like python ',
+            'body':'Lorem ipsum dolor siulpa qui officia deserunt mollit anim id est laborum.',
+            'author':'Bryce Roche',
             'create_date':'04-25-2017'
         },
         {
             'id': 2,
             'title':'Article Two',
-            'body':'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'body':'Lorem ipsum dolor si culpa qui officia deserunt mollit anim id est laborum.',
             'author':'John Doe',
             'create_date':'04-25-2017'
         },
         {
             'id': 3,
             'title':'Article Three',
-            'body':'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            'author':'Brad Traversy',
+            'body':'Lorem ipsum dolor sit a mollit anim id est laborum.',
+            'author':'Braden Johson',
             'create_date':'04-25-2017'
         }
     ]

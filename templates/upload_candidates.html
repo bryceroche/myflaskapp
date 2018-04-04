@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Upload Candidates</h1>
+  {% from "includes/_formhelpers.html" import render_field %}
+  <form method="POST" action="" enctype="multipart/form-data">
+    <form enctype="multipart/form-data">
+    <input name="file" type="file" />
+    <input class="btn btn-primary" type="submit" value="Upload" />
+</form>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Templates</h1>
+  <ul class="list-group">
+    {% for template in templates %}
+      <li class="list-group-item"><a href="template/{{template.templateid}}">{{template.subject}}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

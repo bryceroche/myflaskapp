@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Unscheduled Prospects</h1>
+  <a class="btn btn-success" href="/all_uploads"> Show all batches of uploads</a>
+  <hr>
+  <table class="table table-striped">
+    <tr>
+      <th>ID</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Mobile Number</th>
+      <th>Email</th>
+      <th>Interview Title</th>
+      <th>Role Name</th>
+      <th>Batchid</th>
+      <th>Edit</th>
+      <th>Delete</th>
+
+      <th></th>
+    </tr>
+    {% for candidate in candidates %}
+      <tr>
+        <td>{{candidate.INTERVIEW_REFERENCE_ID}}</td>
+        <td>{{candidate.c_fname}}</td>
+        <td>{{candidate.c_lname}}</td>
+        <td>{{candidate.c_phone}}</td>
+        <td>{{candidate.c_email}}</td>
+        <td>{{candidate.interview_tile}}</td>
+        <td>{{candidate.rolename}}</td>
+        <td>{{candidate.batchid}}</td>
+        <td><a href="edit_interview/{{candidate.id}}" class="btn btn-default pull-right">Edit</a></td>
+        <td>
+          <form action="{{url_for('delete_article', id=candidate.batchid)}}" method="post">
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="submit" value="Delete" class="btn btn-danger">
+          </form>
+        </td>
+        <td>
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
